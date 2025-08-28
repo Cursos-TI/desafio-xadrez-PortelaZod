@@ -6,16 +6,40 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    
+    //Declaração do numero inicial de casas que cada peça irá se movimentar.
+    int movimentosTorre = 5;
+    int movimentosBispo = 1;
+    int movimentosRainha = 1;
+    
+    //repetições para movimentos da Torre.
+    printf("-- Movimentos da Torre -- \n");
+    for(int i = 0; i < movimentosTorre; i++){
+        printf("Torre se movimenta uma casa para a direita. \n");
+    }
+    //descrição final de quantas casas a peça de movimentou.
+    printf("-- numero de casas que a Torre se movimentou(%d) -- \n", movimentosTorre);
+    
+    //repetições para movimentos do Bispo.
+    printf("-- Movimentos do Bispo -- \n");
+    while(movimentosBispo < 5 ){
+        movimentosBispo++;
+        printf("Bispo se movimenta uma casa para a cima e uma casa para a direita. \n");
+    }
+    //descrição final de quantas casas a peça de movimentou.
+    printf("-- numero de casas que o Bispo se movimentou(%d) -- \n", movimentosBispo);
+    
+    //repetições para movimentos da Rainha.
+    printf("-- Movimentos da Rainha -- \n");
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    do{
+        movimentosRainha++;
+        printf("Rainha se movimenta uma casa para a esquerda. \n");
+    }while(movimentosRainha < 8);
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    //descrição final de quantas casas a peça de movimentou.
+    printf("-- numero de casas que a Rainha se movimentou(%d) -- \n", movimentosRainha);
+    
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
